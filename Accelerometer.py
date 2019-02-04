@@ -1,3 +1,5 @@
+#Created by Yassi Khorsandian & Allison Choi
+
 from microbit import *
 import math
 
