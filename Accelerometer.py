@@ -12,8 +12,8 @@ while True:
     rad1 = math.atan2(x, z) #Tilt in x-direction
     rad2 = math.atan2(y, z) #Tilt in y-direction
 
-    deg1 = rad1 / math.pi * 180 #Converting x-tilt from radians to angles
-    deg2 = rad2 / math.pi * 180 #Converting y-tilt from radians to angles
+    deg1 = rad1 / math.pi * 180 #Converting angle of x-tilt from radians to degrees
+    deg2 = rad2 / math.pi * 180 #Converting angle of y-tilt from radians to degrees
 
     print("x", deg1)
     print("y", deg2)
@@ -42,10 +42,3 @@ while True:
             display.show(Image.ARROW_SE)
         else:
             display.show(Image.ARROW_NE)
-    else:
-        blank = Image("00000:"
-                      "00000:"
-                      "00000:"
-                      "00000:"
-                      "00000:")
-        display.show(blank)
