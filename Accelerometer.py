@@ -9,14 +9,14 @@ while True:
     y = accelerometer.get_y()
     z = accelerometer.get_z()
 
-    rad1 = math.atan2(x, z)
-    rad2 = math.atan2(y, z)
+    rad1 = math.atan2(x, z) #Tilt in x-direction
+    rad2 = math.atan2(y, z) #Tilt in y-direction
 
-    deg1 = rad1 / math.pi * 180
-    deg2 = rad2 / math.pi * 180
+    deg1 = rad1 / math.pi * 180 #Converting x-tilt from radians to angles
+    deg2 = rad2 / math.pi * 180 #Converting y-tilt from radians to angles
 
-    print("1", deg1)
-    print("2", deg2)
+    print("x", deg1)
+    print("y", deg2)
 
     if deg1 > 170: #Tilt in x-dimension is negligible
         if deg2 > 170:
